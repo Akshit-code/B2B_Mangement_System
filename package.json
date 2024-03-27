@@ -1,0 +1,24 @@
+{
+  "name": "rd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Akshit Mandani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "mysql2": "^3.9.2",
+    "sequelize": "^6.37.1",
+    "bcrypt": "^5.1.1",
+    "nodemon": "^3.1.0",
+    "jsonwebtoken": "9.0.2",
+    "aws-sdk": "^2.1584.0",
+    "dotenv": "^16.4.5"
+  }
+}

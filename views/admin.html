@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin.css">
+    <title>Admin Homepage</title>
+</head>
+<body>
+    <main>
+        <!-- Side Nav --> 
+        <div class="sidenav">
+            <a href="#" id="adminProductsNav">Products</a>
+            <a href="#" id="adminInventoryNav"> Inventory </a>
+            <a href="#" id="adminOrdersNav"> Orders </a>
+            <a href="#" id="adminDistNav"> Distributors</a>
+            <button id="adminLogout"> LogOut </button>
+        </div>
+        
+        <!-- Products Div -->
+        <div class="main">
+            <div id="product-main-div" display="none">
+                <button id="addProductsBtn" type="button"> Add Products</button>
+                <div id="admin-add-product-form-div" class="modal">
+                    <div class="modal-content" >
+                        <span class="close">&times;</span>
+                        <form class="form" id="admin-add-product-form" action="/adminPanel" method="POST">
+                            <p class="title">Add Product </p>
+                            <p class="message">Fill the Details of product </p>
+                                    
+                            <label for="product-name">
+                                <input id="product-name" required="" placeholder="" type="text" class="input">
+                                <span>Product Name</span>
+                            </label> 
+
+                            <label for="product-img-link">
+                                <input id="product-img-link" required placeholder="" type="text" class="input">
+                                <span>Product Image Link</span>
+                            </label>
+
+                            <label for="product-desc">
+                                <input id="product-desc" required="" placeholder="" type="text" class="input">
+                                <span>Product Descripition</span>
+                            </label>
+                            <button id="admin-add-product-Submit-Btn" class="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="product-container">
+
+                </div>
+            </div>
+
+            <!-- Inventorty Div  -->
+            <div id="inventory-main-div" display="none">
+                <h1>Inventory</h1>
+                <div id="product-list"> </div>
+            </div>
+
+            <!-- Admin Orders Div -->
+            <div id="adminOrders-main-div" display="none">
+                <h1>Orders</h1>
+                <div id="ordersContainer"></div>
+            </div>
+
+            <!-- Admin Distributor Div -->
+            <div id="adminDis-main-div" display="none">
+                <h1> Distributor </h1>
+                <div id="distributor-container"></div>
+            </div>
+        </div>
+        <script src="/scripts.js"></script>
+        <script src="/admin.js"></script>
+    </main>
+</body>
+</html>

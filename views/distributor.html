@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="sidenav">
+            <a href="#" id="distOrdersNav"> Orders </a>
+            <a href="#" id="distHistoryNav"> History </a>
+            <button id="dist-logout"> LogOut </button>   
+        </div>
+
+        <div class="main">
+            <div id="distOrdersMainDiv" style="display: none;">
+                <h1> Orders </h1>
+                <div id="ordersContainer"></div>
+            </div>
+            <div id="distHistoryMainDiv" style="display: none;">
+                <h1> History </h1>
+                <div id="historyContainer"> </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="/distributor.js"></script>
+</body>
+</html>
